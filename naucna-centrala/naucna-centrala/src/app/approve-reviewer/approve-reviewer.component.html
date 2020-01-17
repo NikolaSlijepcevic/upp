@@ -1,0 +1,21 @@
+<!-- <div class="midDiv">
+    <h2>Finish task</h2>
+</div> -->
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div fxLex="25%">
+    </div>
+    <div fxLex="50%">
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value, f)" ngNativeValidate>
+      <div *ngFor="let field of formFields" >
+          <label for={{field.id}}>{{field.label}}</label>
+          <input type="checkbox" name={{field.id}} ngModel  *ngIf="field.type.name=='boolean'">
+          <input type="text" name={{field.id}} ngModel  *ngIf="field.type.name=='string'  && field.id != 'password'" >
+          <input type="password" name={{field.id}} ngModel  *ngIf="field.id=='password'">
+      </div>
+      <input type="submit" value="OK">
+    </form>
+</div>
+<div fxLex="25%">
+  </div>
+</div>

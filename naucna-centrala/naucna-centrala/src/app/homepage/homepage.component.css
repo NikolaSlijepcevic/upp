@@ -1,0 +1,9 @@
+.fill{
+    flex: 1 1 auto;
+}
+#background{
+    background-image: url(../../assets/images/reading.jpg);  
+	background-size:cover;      
+    height: 200px;
+    vertical-align: top;
+}
