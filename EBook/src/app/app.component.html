@@ -1,0 +1,8 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+  
+  <a class="navbar-brand" [routerLink]="['/registrate']" >Registracija</a>
+  <a class="navbar-brand" [routerLink]="['/login']" >Logovanje</a>
+  <a class="navbar-brand" [routerLink]="['/zapocniObradu']" >Pokreni proces</a>
+  <a class="navbar-brand" [routerLink]="['/']" (click)="logout()" >Odjavi se</a>
+</nav>
+<router-outlet></router-outlet>
